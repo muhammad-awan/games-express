@@ -1,0 +1,39 @@
+GET http://localhost:5000/gum HTTP/1.1 
+
+###
+
+GET http://localhost:5000/articles/595b8f9963b55959f4054b57 HTTP/1.1
+
+###
+
+POST http://localhost:5000/articles HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "money stuffs",
+  "by": "hulk",
+  "comments": 4
+}
+
+
+###
+
+DELETE http://localhost:5000/articles/595b8f9963b55959f4054b57 HTTP/1.1
+
+###
+
+PUT http://localhost:5000/articles/595baa7291ef6b481441dc95 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "new",
+  "by": "stuff",
+  "comments": 60
+}
+
+
+
+
+
+
+
